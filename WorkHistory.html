@@ -1,0 +1,534 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>
+           My Webpage
+        </title>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+        <link rel="stylesheet" href="PageStyle.css" type="text/css">
+        <link rel ="stylesheet" href="variables.css" type="text/css">
+        <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+   <style>
+
+body {
+  font: 100% Arial, Helvetica, sans-serif; }
+   </style>
+    </head>
+        <body>
+           
+            <div class="header">
+Professional               
+               <br>
+            Experience   
+               
+                  
+                 
+              
+                
+            </div>
+            <div id="top_container">
+                <nav class="navbar navbar-expand-lg navbar-light bg-light" id="navbar">
+           
+                    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                      <span class="navbar-toggler-icon"></span>
+                    </button>
+                  
+                    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                        <ul class="navbar-nav mr-auto" id="nav">
+                        <li class="nav-item">
+                          <a class="nav-link" href="HomePage.html">Home </a>
+                        </li>
+                        <li class="nav-item">
+                          <a class="nav-link" href="Education.html">Education</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="Technical.html" >Skills</a>
+                          </li>
+                          <li class="nav-item">
+                            <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Work</a>
+                          </li>
+                          <li class="nav-item">
+                            <a class="nav-link" href="Contact.html">Contact</a>
+                          </li>
+                        
+                      </ul>
+                    </div>
+                </nav>
+            </div>
+
+                <div class="container">
+                   <div class="row">
+                       <div class ="col-lg-6" id= "tr"style="justify-content: center;">
+                        <span class="url">
+                            <a href="https://www.thomsonreuters.com/en.html"> <img src="data:image/png;base64,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" alt="">
+                          </a>
+                          <div id="tryear" style="align-items: flex-end;">
+                              2011-2019
+                          </div>
+                          <br>
+                          </span>
+                       </div>
+                      
+                   </div>
+                              
+
+              
+                   <div class="row">
+                   
+                          
+                        <div class ="col">
+                            </div>
+                            </div>
+
+                     <div class="row">
+                        <div class ="col">
+                       <div class="posstion">
+                        <h4>QA Manager</h4>    <span style="align-items:center;margin-left:  30px;" >2017-2019</span>
+                       </div>
+                       
+                       <div class="work">
+                           <p>
+                            Promoted to QA Manager responsible for leading and monitoring quality-assurance testing processes and teams local and offshore. Provided developer team with identified bugs/flaws as well as recommended solutions. Involving as a key person in sprint planning and release management process.
+                           
+                        <a class="link" data-toggle="collapse" href="#QAmanagerTask" role="button" aria-expanded="false" aria-controls="experience">more....</a></p>
+                      
+                        <div class="collapse" id="QAmanagerTask">
+                            <div class="experience">
+                                <div class= "projectDetais">
+                                    <table>
+                                        <tr>
+                                            <th colspan="2">
+                                                Project: Fringe Benefits Tax (Web)      
+                                            </th>
+                                        </tr>
+                                        <tr>
+                                            <th>
+                                                Language/ Techniques/Tools:
+                                            </th>
+                                            <td>
+                                                Selenium Web Driver, Excel, JMeter, JavaScript, Jira, C#, TFS, Jenkins
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <th>
+                                                Database:
+                                            </th>
+                                            <td>
+                                                SQL Server 2014
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <th>
+                                                Agile:
+                                            </th>
+                                            <td>
+                                                Scrum
+                                            </td>
+                                        </tr>
+                                    </table>
+                                </div>
+                                </div>
+                              
+                                <p>
+                                Fringe Benefits Tax (Web) is a green fields implementation of our market leading Fringe Benefits Tax (FBT) management product aimed at Australia’s large and medium-sized corporations. Responsible for leading the QA team as well as project management of this flagship product.
+                                </p>
+                                <ul><li> Achievements:</li>
+                                    <ul>
+                                 <li>Designed and implemented automated UI and API test suite using selenium web driver with C# and integrated to execute with each build using Jenkins.
+                                <li>Achieved a 50% reduction of manual regression test execution time by improving the testcase coverage and encouraging the use of increased automation 
+                                <li>	Transformed the existing manual test team into high preforming technical team through extensive mentoring, actively monitoring progress and conducting scrum meetings and KT sessions.
+                                <li></li>	Successfully managed the release of FBT web application to the market which was delivered on time and of a high-quality standard.
+                                </ul>
+                                </ul>
+                            </div>   
+                    </div>
+                    
+                    </div>
+                   </div>
+                   <hr>
+                   <div class="row">
+                   
+                          
+                    <div class ="col">
+                        </div>
+                  </div>
+                       
+                <div class="row">
+                    <div class ="col">
+                   <div class="posstion">
+                    <h4>QA Lead</h4>    <span style="align-items:center;margin-left:  30px;" >2015-2017</span>
+                   </div>
+                   
+                   <div class="work">
+                       <p>
+                        Working as a key member of the agile software development team as the lead QA tester development projects for the OneSource Fringe Benefit Tax (FBT) desktop product. Responsible for supervising a four-member software testing team throughout the development and implementation of quality assurance and quality control methodologies. Ensured compliance and adherence to QA standards and tax requirements.
+                    <a class="link" data-toggle="collapse" href="#QALeadTask" role="button" aria-expanded="false" aria-controls="experience">more....</a></p>
+                    <div class="collapse" id="QALeadTask">
+                        <div class="experience">
+                            <div class= "projectDetais">
+                                <table>
+                                    <tr>
+                                        <th colspan="2">
+                                            Project: FBT (Desktop)     
+                                        </th>
+                                    </tr>
+                                    <tr>
+                                        <th>
+                                            Language/ Techniques/Tools:
+                                        </th>
+                                        <td>
+                                            VBScript, HP Quick Test Professional (QTP), Team Foundation Server, Microsoft Test Manager, VM
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <th>
+                                            Database:
+                                        </th>
+                                        <td>
+                                            SQL Server 2014
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <th>
+                                            Agile:
+                                        </th>
+                                        <td>
+                                            Scrum
+                                        </td>
+                                    </tr>
+                                </table>
+                            </div>
+                            
+                          
+                            <p>
+                                Fringe Benefits Tax is a market leading Fringe Benefits Tax (FBT) management product aimed at Australia’s large and medium-sized corporations. Responsible for leading the QA team and project management of this flagship product.</p>
+                            <ul><li> Achievements:</li>
+                                <ul>
+                             <li>Increased automation testing from 60% to 80% resulting in a reduction of manual regression test time.
+                             </ul>
+                            </ul>
+                        </div>  
+                        </div> 
+                        </div>
+                </div>
+                </div>
+                <hr>
+                <div class="row">
+                    <div class ="col">
+                   <div class="posstion">
+                    <h4>Senior Test Analyst </h4>    <span style="align-items:center;margin-left:  30px;" >2013-2015</span>
+                   </div>
+                   
+                   <div class="work">
+                       <p>
+                        Promoted to Serve as Senior Test Analyst to Design, developed, Test and implemented automation test framework for valuation manage and electronic file lodgement software development projects. 
+                    <a class="link" data-toggle="collapse" href="#SnrQATask" role="button" aria-expanded="false" aria-controls="experience">more....</a></p>
+                    <div class="collapse" id="SnrQATask">
+                        <div class="experience">
+                            <div class= "projectDetais">
+                                <table>
+                                    <tr>
+                                        <th colspan="2">
+                                            Project: VM Online (Web)    
+                                        </th>
+                                    </tr>
+                                    <tr>
+                                        <th>
+                                            Language/ Techniques/Tools:
+                                        </th>
+                                        <td>
+                                            Selenium Web Driver, Excel
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <th>
+                                            Database:
+                                        </th>
+                                        <td>
+                                            SQL Server 2008
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <th>
+                                            Agile:
+                                        </th>
+                                        <td>
+                                            Scrum
+                                        </td>
+                                    </tr>
+                                </table>
+                            </div>
+                            
+                          
+                            <p>
+                                VM Online is a market leading web-based property valuation tool used mostly by local councils within Victoria.</p>
+                            <ul><li> Achievements:</li>
+                                <ul>
+                             <li>Reduced test execution time by 100% through the design and implementation of twitch automated test frame work using C# and Selenium web driver which replaced the manual regression tests. Results were achieved by using a collaborative team leadership approach as well as drawing on extensive technical experience.
+                             </ul>
+                            </ul>
+                        </div> 
+                        <div class="experience">
+                            <div class= "projectDetais">
+                                <table>
+                                    <tr>
+                                        <th colspan="2">
+                                            Project: E-filer (SBR -Web)   
+                                        </th>
+                                    </tr>
+                                    <tr>
+                                        <th>
+                                            Language/ Techniques/Tools:
+                                        </th>
+                                        <td>
+                                            VBScript, HP Quick Test Professional (QTP), Team Foundation Server, VM, JMeter
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <th>
+                                            Database:
+                                        </th>
+                                        <td>
+                                            SQL Server 2008
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <th>
+                                            Agile:
+                                        </th>
+                                        <td>
+                                            Scrum
+                                        </td>
+                                    </tr>
+                                </table>
+                            </div>
+                            
+                          
+                            <p>
+                                E-filer is a product used to integrate tax software with the Australian Tax Office allowing businesses to file their tax returns electronically. Within this project was responsible for functional automation using QTP, Load and stress testing with JMeter. </p>
+                            <ul><li> Achievements:</li>
+                                <ul>
+                             <li>
+                                Developed an automated performance and stress test suite using JMeter which reduces and streamlines the performance bottle neck of the E-filer product which occurs before going to market.
+                             </ul>
+                            </ul>
+                        </div>   
+                    
+                </div>
+
+                </div>
+                </div>
+                </div>
+                <hr>
+                <div class="row">
+                   
+                          
+                    <div class ="col">
+                        </div>
+                  </div>
+            
+                <div class="row">
+                    <div class ="col">
+                   <div class="posstion">
+                    <h4>Test Analyst </h4>    <span style="align-items:center;margin-left:  30px;" >2011-2013</span>
+                   </div>
+                   
+                   <div class="work">
+                       <p>
+                        Responsible for writing the testcase and validating against the project requirements. Conducted testcase execution and implementation of automation frameworks for PowerTax product.  
+                    <a class="link" data-toggle="collapse" href="#QATask" role="button" aria-expanded="false" aria-controls="experience">more....</a></p>
+                    <div class="collapse" id="QATask">
+                        <div class="experience">
+                            <div class= "projectDetais">
+                                <table>
+                                    <tr>
+                                        <th colspan="2">
+                                            Project: Power Tax Web Regression Test Suite  
+                                        </th>
+                                    </tr>
+                                    <tr>
+                                        <th>
+                                            Language/ Techniques/Tools:
+                                        </th>
+                                        <td>
+                                            WatiN, C#, Team Foundation Server, VM
+                                        </td>
+                                    </tr>
+                                   
+                                    <tr>
+                                        <th>
+                                          Methodology
+                                        </th>
+                                        <td>
+                                            WaterFall
+                                        </td>
+                                    </tr>
+                                </table>
+                            </div>
+                            
+                          
+                            <p>
+                                Powertax is a leading corporate tax management product aimed at Australia’s large to medium-sized organisations.</p>
+                            <ul><li> Achievements:</li>
+                                <ul>
+                             <li>•	Reduced the manual regression test execution time from 2 days to 30 minutes by implementing the automated test suite using WaitiN with C#.
+                             </ul>
+                            </ul>
+                        </div> 
+                        <div class="experience">
+                            <div class= "projectDetais">
+                                <table>
+                                    <tr>
+                                        <th colspan="2">
+                                            Project: Power Tax Web Health Check 
+                                        </th>
+                                    </tr>
+                                    <tr>
+                                        <th>
+                                            Language/ Techniques/Tools:
+                                        </th>
+                                        <td>
+                                            VBScript, HP Quick Test Professional (QTP), Team Foundation Server, VM
+                                        </td>
+                                    </tr>
+                                   
+                                    <tr>
+                                        <th>
+                                            Methodology
+                                          </th>
+                                          <td>
+                                              WaterFall
+                                          </td>
+                                    </tr>
+                                </table>
+                            </div>
+                            
+                          
+                            <ul><li> Achievements:</li>
+                                <ul>
+                             <li>
+                                Reduced the execution time of manual health check by 80% through innovative design, development and implementation of automated test using Quick Test Professional (QTP).  
+                             </ul>
+                            </ul>
+                        </div>   
+                    
+                </div>
+
+                </div>
+                </div>
+                </div>
+                <hr>
+                <div class="row">
+                    <div class="col">
+                </div>
+                
+                </div>
+                <div class="row">
+                    <div class="col">
+                        
+                        <button type="button" class="btn btn-link" data-toggle="collapse" href="#other" role="button" aria-expanded="false" aria-controls="experience">Previous Roles....</button>
+                      <div class="collapse" id="other">
+                       
+                  
+                       
+            
+                
+                
+                
+
+                <div class="row">
+                    <div class ="col-lg-6" id= "dialog"style="justify-content: center;">
+                     <span class="url">
+                         <a href="https://www.dialog.lk"> <img src="https://www.dialog.lk/dialogdocroot/content/images/dialog_logo.png" alt="Dialog Telekom -Sri Lanka">
+                       </a>
+                       <br>
+                       <div id="dialogyear" style="align-items: flex-end;">
+                           2007-2010
+                       </div>
+                       <br>
+                       </span>
+                    </div>
+                   
+                </div>
+              
+                <div class="row">
+                   
+                          
+                    <div class ="col">
+                        </div>
+                  </div>
+
+                <div class="row">
+                            <div class ="col">
+                                <div class="posstion">
+                                   <h4> QA Engineer</h4>
+                                    <span> 2007-2010</span>
+                                </div>
+                                
+                                    <p>
+                                        Requirement analysis, Test planning documents preparation and reporting on requirement defects. Performed End to End Testing CRM with Billing System. Writing test requirements and scenarios on the CRM new functionality. Conducting User Acceptance Testing (UAT) and executing Vendor/ Inhouse Testcases. Preparing automation scripts using QTP and maintain the report and defect using HP Quality Centre.
+                                    </p>
+                               
+                            </div>
+                            <hr>
+                            <div class="row">
+                   
+                          
+                                <div class ="col">
+                                    </div>
+                              </div>
+                  </div>
+                  <br>
+                  <div class="row">
+                   
+                          
+                    <div class ="col">
+                        </div>
+                  </div>
+                  <div class="row">
+                    <div class ="col-lg-6" id= "hSenid"style="justify-content: center;">
+                     <span class="url">
+                         <a href="https://www.hsenid.com"> <img src="https://www.hsenid.com/hsenidnew/images/logo.png" alt="Dialog Telekom -Sri Lanka">
+                       </a>
+                       <br>
+                       <div id="dialogyear" style="align-items: flex-end;">
+                           2007-2010
+                       </div>
+                       <br>
+                       </span>
+                    </div>
+                   
+                </div>
+
+                  <div class="row">
+                   
+                          
+                    <div class ="col">
+                        </div>
+                  </div>
+
+                <div class="row">
+                            <div class ="col">
+                                <div class="posstion">
+                                   <h4> QA Engineer</h4>
+                                    <span> 2006-2017</span>
+                                </div>
+                                
+                                    <p>
+                                        Requirement analysis, Test planning documents preparation and reporting on requirement defects. Performed End to End Testing on Human Resource Management (HRM) System. Writing test requirements and scenarios on the new functionality. manintain the defects in Bugzila defect management.
+                                    </p>
+                                
+                            </div>
+                            <hr>
+</div>
+</div>
+                  </div>
+                </div>
+            </div>
+        </body>
+   
+</html>

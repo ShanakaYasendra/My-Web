@@ -1,0 +1,31 @@
+$font-stack:    Arial, Helvetica, sans-serif;
+$padding_v: 30px;
+$text-align_v:left;
+$font-size_v:35px;
+$float-val: left;
+$width_column:46%;
+$column_papping:50px;
+$fill_color:transparent;
+body {
+  font: 100% $font-stack;
+ }
+
+ .header{
+            
+	padding: $padding_v;
+	text-align: $text-align_v;
+	font-size: $font-size_v;
+}
+
+.column {
+	float: $float-val;
+	width: $width_column;
+	padding: $column_papping;
+	fill: $fill_color;
+ 
+}
+.container{
+	padding-top: $padding_v;
+}
+
+ 
