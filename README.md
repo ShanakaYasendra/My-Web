@@ -93,3 +93,5 @@ variables.scss
 this use to style body, header, column  and container with parameterise value.
 
 
+table.scss
+this use nesting style image inside the table data.
