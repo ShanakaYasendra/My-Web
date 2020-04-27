@@ -1,0 +1,7 @@
+{
+"version": 3,
+"mappings": "AAGI,iBAAG;EACL,KAAK,EAAE,IAAI;EACX,MAAM,EAAE,IAAI;EACZ,WAAW,EAAE,MAAM",
+"sources": ["table.scss"],
+"names": [],
+"file": "table.css"
+}
