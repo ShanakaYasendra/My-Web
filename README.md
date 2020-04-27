@@ -1,27 +1,26 @@
 # Project-0
-This web site is represting my resume. It content 5 html page.
+This web site is representing my resume. Its content 5 html page.
 
-
-all pages use Bootstap Nav items and Bootstarp navbar use with in navigation bar design except the indexpage.
+all pages use Bootstrap Nav items and Bootstrap navbar use with in navigation bar design except the indexpage.
 Index.html
-index page is the landing page which is a simplae welcome page content hero image and hero text. it use the hero.css to style the page.
+index page is the landing page which is a simple welcome page content hero image and hero text. it uses the hero.css to style the page.
 image is download from
-"http://www.freepik.com" add the watermark to to accredit the author
+"http://www.freepik.com" add the watermark to accredit the author
 <a href="http://www.freepik.com">Designed by Jannoon028 / Freepik</a>
 
 HomePage.html
 
-Home page is basic html page with the  profile image of my self and summary about my profession.
+Home page is basic html page with the profile image of myself and summary about my profession.
 it used PageStyle.css and variables.sccs to style the page.
-media quary use with to adjust the page with small scree such as mobile.
-Bootstap Nav items and Bootstarp navbar use with in navigation bar design
-CSS row and column useed in the layout designing.
-Unordeed list used to display the list item in key strength.
+media query use with to adjust the page with small scree such as mobile.
+Bootstrap Nav items and Bootstrap navbar use with in navigation bar design
+CSS row and column used in the layout designing.
+Unordered list used to display the list item in key strength.
 
 Education.html
-this page display the table of my education and qualification.
+this page displays the table of my education and qualification.
 it used PageStyle.css and variables.sccs to style the page.
-also use following page level CSS selecter and properties to style page level components.
+also use following page level CSS selector and properties to style page level components.
 body {
   font: 100% Arial, Helvetica, sans-serif; }
 .tableheader{
@@ -29,13 +28,11 @@ body {
     text-align: center;
 }
 
-each logo contain a link to appropriate web site 
-
-
+each logo contains a link to appropriate web site 
 
 Technical.html
 
-this page conatains technical skill of my resume.
+this page contains technical skill of my resume.
 used bootstrap lay out with rows and colmn.
 this page used PageStyle.css and variables.sccs to style the page.
 
@@ -48,22 +45,20 @@ this page used following css to style the page level element
 
 WorkHistory.html
 
-this page display the my work history.
+this page displays my work history.
 Each company logo linked to the company website.  
-used bootstrap lay out with rows and colmn.
+used bootstrap lay out with rows and column.
 used bootstrap collapse component to display more details.
 it used PageStyle.css and variables.sccs to style the page.
-also use following page level CSS selecter and properties to style page level components.
-
+also use following page level CSS selector and properties to style page level components.
 
 Contact.html
 
-this page is display my email to contact me. when user click on the email it will open email clint to send compose the email to contact me.
-
+this page is displaying my email to contact me. when user click on the email it will open email client to send compose the email to contact me.
 
 PageStyle.css
 
-comon page style are list here.
+common page style is list here.
 
 I have use
 #id
@@ -71,7 +66,7 @@ I have use
 component
 child component
 
-to style selecters with 
+to style selectors with 
 
 ex:
 p
@@ -87,11 +82,18 @@ list-style
 margin
 float
 
-
 variables.scss
 
-this use to style body, header, column  and container with parameterise value.
-
+this use to style body, header, column and container with parameterise value.
 
 table.scss
-this use nesting style image inside the table data.
+this use SCSS nesting style image inside the table data.
+SCSS inheritance use in the table font styling.
+
+contactMe.jpg is download form "http://www.freepik.com" 
+ accredit the author <a href="http://www.freepik.com">Designed by Jannoon028 / Freepik</a> 
+
+100.jpg is download form "http://www.freepik.com" 
+ accredit the author <a href="http://www.freepik.com">Designed by snowing / Freepik</a>
+
+
